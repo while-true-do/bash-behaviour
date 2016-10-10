@@ -1,4 +1,4 @@
-# While-True-Do: Bash-Behaviour
+# While True Do - bash-behaviour
 | Some Adjustments for Bash, to provide a better behaviour.
 
 ## Features
@@ -20,7 +20,7 @@ bind "set completion-ignore-case on"
 ### Added Aliases
 
 ```
-# Color grep
+## Color grep
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
@@ -40,7 +40,6 @@ The script is tested under:
 *   RedHat 7.x
 *   CentOS 7.x
 *   Fedora 23+
-*   OracleLinux 7
 
 ## Installation
 

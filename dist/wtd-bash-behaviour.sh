@@ -1,9 +1,15 @@
+#!/bin/bash
+# While-True-Do: Bash-Behaviour
+# Some Adjustments for Bash, to provide a better behaviour.
+
 ## Ignore Case for Tab Completion
 bind "set completion-ignore-case on"
 ## Scroll through tab completion
 # bind "TAB":"menu-complete"
+
 ## cd without cd
 shopt -s autocd
+
 ## Color grep
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
