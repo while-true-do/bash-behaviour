@@ -2,7 +2,6 @@
 # While-True-Do: Bash-Behaviour
 # Some Adjustments for Bash, to provide a better behaviour.
 
-
 ####################
 # binds            #
 ####################
@@ -38,3 +37,5 @@ alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la --color=auto'
 ## Faster navigating
 alias ..='cd ..'
+## git should be english anyway
+alias git='LANG=en_US git'
