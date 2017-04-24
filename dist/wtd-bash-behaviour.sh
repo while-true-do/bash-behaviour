@@ -34,7 +34,7 @@ alias grep='grep --color=auto'
 ## Color ls
 alias l.='ls -d .* --color=auto'
 alias ll='ls -l --color=auto'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la --color=auto'
 ## Faster navigating
 alias ..='cd ..'
