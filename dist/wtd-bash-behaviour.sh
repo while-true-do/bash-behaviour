@@ -1,7 +1,12 @@
 #!/bin/bash
 # While-True-Do: Bash-Behaviour
 # Some Adjustments for Bash, to provide a better behaviour.
-
+#
+# Are we in Bash?
+[ -n "$BASH_VERSION" ] || return 0
+# Are we interactive?
+[[ $- == *i* ]] || return 0
+#
 ####################
 # binds            #
 ####################
