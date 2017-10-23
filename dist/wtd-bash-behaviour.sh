@@ -34,6 +34,7 @@ shopt -s cmdhist       # save multiline commands in one history line
 export HISTSIZE=10000
 export HISTFILESIZE=10000
 export HISTCONTROL="ignorespace:ignoredups"
+export HISTIGNORE="history:ls"
 
 ####################
 # Aliases          #
