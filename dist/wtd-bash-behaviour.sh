@@ -25,6 +25,17 @@ shopt -s dirspell      # bash attempts spelling correction
 shopt -s dotglob       # include leading dot-files/dirs
 
 ####################
+# history          #
+####################
+shopt -s histappend    # append instead of overwrite
+shopt -s cmdhist       # save multiline commands in one history line
+
+# export HISTTIMEFORMAT="%F %T "
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL="ignorespace:ignoredups"
+
+####################
 # Aliases          #
 ####################
 ## File-Operations ask before overwriting
@@ -42,5 +53,6 @@ alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la --color=auto'
 ## Faster navigating
 alias ..='cd ..'
+alias ...='cd ..\..'
 ## git should be english anyway
 alias git='LANG=en_US git'
