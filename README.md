@@ -1,47 +1,38 @@
 # While True Do - bash-behaviour
 | Some Adjustments for Bash, to provide a better behaviour.
 
+## Motivation
+
+Bash is a very nice shell. Unfortunately, it needs some tuning. At least in our case, it is more useful with some adjustments.
+
 ## Features
 
-### Enabled shopts
+To get an overview of all features, you should check the script itself. It has a ton of comments in it. Some of the improvements are:
 
-```
-## cd without cd
-shopt -s autocd
-```
-
-### Changed binds
-
-```
-## Ignore Case for Tab Completion
-bind "set completion-ignore-case on"
-```
-
-### Added Aliases
-
-```
-## Color grep
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
-## Color ls
-alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
-alias ls='ls --color=auto'
-alias la='ls -la --color=auto'
-## Faster navigating
-alias ..='cd ..'
-```
+-   Enhance tab completion in many ways
+-   Tune the behaviour of history appendings
+-   Enable colors for common commands
+-   Add some aliases for common commands
 
 ## Requirements
 
 The script is tested under:
 
-*   RedHat 7.x
-*   CentOS 7.x
-*   Fedora 23+
+-   RedHat 7.x
+-   CentOS 7.x
+-   Fedora 23+
+-   SLES 12+
+-   Arch Linux 2018+
+-   Debian 9.1+
+
+## Dependencies
+
+-   You have to use bash
+-   The adjustments can work as a stand-alone, but you should consider to have a look at the [bash-rpompt](https://github.com/while-true-do/bash-prompt).
 
 ## Installation
+
+### Manual Installation
 
 You can run the installer as root for global installation or as a user for installation in your home directory.
 
@@ -50,20 +41,29 @@ You can run the installer as root for global installation or as a user for insta
 3.  Make the installer executable `chmod +x install.sh`
 4.  Run the installer `./install.sh`
 
+### Ansible Installation
+
+For CentOS, there is a [role](https://github.com/while-true-do/ansible-role-wtd-bash) you can use for the installation.
+
+## Testing
+
+Currently the script is tested manually via shellcheck. An automation is not present.
+
+## Contribute / Bugs
+
+Thank you so much for considering to contribute. Every contribution helps us. We are really happy, when somebody is joining the hard work. Please have a look at the links first.
+
+-   [Contribution Guidelines](./docs/CONTRIBUTING.md)
+-   [Create an issue or Request](https://github.com/while-true-do/bash-behaviour/issues)
+-   [See who was contributing already](https://github.com/while-true-do/bash-behaviour/graphs/contributors)
+
 ## License
 
 This work is licensed under a [BSD License](https://opensource.org/licenses/BSD-3-Clause).
 
-## Contribute / Bugs
-
-**bug reports:** <https://github.com/while-true-do/bash-behaviour/issues>
-
-**contributers:** <https://github.com/while-true-do/bash-behaviour/graphs/contributors>
-
 ## Author Information
 
-**blog:** <https://blog.while-true-do.org>
+Blog: [blog.while-true-do.org](https://blog.while-true-do.org)
 
-**github:** <https://github.com/daniel-wtd>
+Mail: [hello@while-true-do.org](mailto:hello@while-true-do.org)
 
-**contact:** [mail@while-true-do.org](mailto:mail@while-true-do.org)

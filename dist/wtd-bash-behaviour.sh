@@ -44,10 +44,11 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 ## Color grep
+alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
 ## Color ls
+alias l='ls --color=auto'
 alias l.='ls -d .* --color=auto'
 alias ll='ls -l --color=auto'
 alias ls='ls --color=auto --group-directories-first'
