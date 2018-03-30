@@ -19,6 +19,7 @@ bind "set completion-ignore-case on"
 # shopts           #
 ####################
 shopt -s autocd        # cd without cd
+shopt -s checkjobs     # check if background job is running before exiting
 shopt -s checkwinsize  # check window size and resize
 shopt -s cdspell       # autocorrect minor spelling errors
 shopt -s dirspell      # bash attempts spelling correction
@@ -27,8 +28,8 @@ shopt -s dotglob       # include leading dot-files/dirs
 ####################
 # history          #
 ####################
-shopt -s histappend    # append instead of overwrite
 shopt -s cmdhist       # save multiline commands in one history line
+shopt -s histappend    # append instead of overwrite
 
 # export HISTTIMEFORMAT="%F %T "
 export HISTSIZE=10000
@@ -50,7 +51,7 @@ alias fgrep='fgrep --color=auto'
 ## Color ls
 alias l='ls --color=auto'
 alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
+alias ll='ls -1 --color=auto'
 alias ls='ls --color=auto --group-directories-first'
 alias la='ls -la --color=auto'
 ## Faster navigating
@@ -58,3 +59,5 @@ alias ..='cd ..'
 alias ...='cd ..\..'
 ## git should be english anyway
 alias git='LANG=en_US git'
+## watch
+alias watch='watch -d'
