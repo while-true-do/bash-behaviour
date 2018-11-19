@@ -51,8 +51,8 @@ alias fgrep='fgrep --color=auto'
 ## Color ls
 alias l='ls --color=auto'
 alias l.='ls -d .* --color=auto'
-alias ll='ls -1 --color=auto'
-alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -l --color=auto'
+alias ls='ls --color=auto'
 alias la='ls -la --color=auto'
 ## Faster navigating
 alias ..='cd ..'
